@@ -15,6 +15,16 @@
 		FAA486BF2000676F006E6100 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA486BE2000676F006E6100 /* main.m */; };
 		FAA486C92000676F006E6100 /* TestCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA486C82000676F006E6100 /* TestCodeTests.m */; };
 		FAA486D42000676F006E6100 /* TestCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA486D32000676F006E6100 /* TestCodeUITests.m */; };
+		FAA486EA200067E0006E6100 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA486E8200067E0006E6100 /* HomeViewController.m */; };
+		FAA486EB200067E0006E6100 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA486E9200067E0006E6100 /* HomeViewController.xib */; };
+		FAA486EF200067F0006E6100 /* PersonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA486ED200067F0006E6100 /* PersonDetailViewController.m */; };
+		FAA486F0200067F0006E6100 /* PersonDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA486EE200067F0006E6100 /* PersonDetailViewController.xib */; };
+		FAA486F620006853006E6100 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA486F520006853006E6100 /* Request.m */; };
+		FAA486FA2000686A006E6100 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA486F92000686A006E6100 /* Person.m */; };
+		FAA486FE20007255006E6100 /* PersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA486FC20007255006E6100 /* PersonTableViewCell.m */; };
+		FAA486FF20007255006E6100 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA486FD20007255006E6100 /* PersonTableViewCell.xib */; };
+		FAA4870320007669006E6100 /* PersonDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA4870120007669006E6100 /* PersonDetailTableViewCell.m */; };
+		FAA4870420007669006E6100 /* PersonDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA4870220007669006E6100 /* PersonDetailTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,23 @@
 		FAA486CF2000676F006E6100 /* TestCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA486D32000676F006E6100 /* TestCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCodeUITests.m; sourceTree = "<group>"; };
 		FAA486D52000676F006E6100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA486E7200067E0006E6100 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FAA486E8200067E0006E6100 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FAA486E9200067E0006E6100 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		FAA486EC200067F0006E6100 /* PersonDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonDetailViewController.h; sourceTree = "<group>"; };
+		FAA486ED200067F0006E6100 /* PersonDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonDetailViewController.m; sourceTree = "<group>"; };
+		FAA486EE200067F0006E6100 /* PersonDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonDetailViewController.xib; sourceTree = "<group>"; };
+		FAA486F220006836006E6100 /* API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		FAA486F420006853006E6100 /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		FAA486F520006853006E6100 /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		FAA486F82000686A006E6100 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		FAA486F92000686A006E6100 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		FAA486FB20007255006E6100 /* PersonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonTableViewCell.h; sourceTree = "<group>"; };
+		FAA486FC20007255006E6100 /* PersonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonTableViewCell.m; sourceTree = "<group>"; };
+		FAA486FD20007255006E6100 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
+		FAA4870020007669006E6100 /* PersonDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonDetailTableViewCell.h; sourceTree = "<group>"; };
+		FAA4870120007669006E6100 /* PersonDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonDetailTableViewCell.m; sourceTree = "<group>"; };
+		FAA4870220007669006E6100 /* PersonDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonDetailTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +128,9 @@
 		FAA486AE2000676F006E6100 /* TestCode */ = {
 			isa = PBXGroup;
 			children = (
+				FAA486E4200067A7006E6100 /* Controllers */,
+				FAA486E3200067A3006E6100 /* Views */,
+				FAA486E22000679B006E6100 /* Models */,
 				FAA486AF2000676F006E6100 /* AppDelegate.h */,
 				FAA486B02000676F006E6100 /* AppDelegate.m */,
 				FAA486B22000676F006E6100 /* ViewController.h */,
@@ -130,6 +160,84 @@
 				FAA486D52000676F006E6100 /* Info.plist */,
 			);
 			path = TestCodeUITests;
+			sourceTree = "<group>";
+		};
+		FAA486E22000679B006E6100 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAA486F720006858006E6100 /* Person */,
+				FAA486F32000683B006E6100 /* Request */,
+				FAA486F120006820006E6100 /* API */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAA486E3200067A3006E6100 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAA486FB20007255006E6100 /* PersonTableViewCell.h */,
+				FAA486FC20007255006E6100 /* PersonTableViewCell.m */,
+				FAA486FD20007255006E6100 /* PersonTableViewCell.xib */,
+				FAA4870020007669006E6100 /* PersonDetailTableViewCell.h */,
+				FAA4870120007669006E6100 /* PersonDetailTableViewCell.m */,
+				FAA4870220007669006E6100 /* PersonDetailTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAA486E4200067A7006E6100 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAA486E5200067C1006E6100 /* Home */,
+				FAA486E6200067C8006E6100 /* PersonDetail */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FAA486E5200067C1006E6100 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FAA486E7200067E0006E6100 /* HomeViewController.h */,
+				FAA486E8200067E0006E6100 /* HomeViewController.m */,
+				FAA486E9200067E0006E6100 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FAA486E6200067C8006E6100 /* PersonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FAA486EC200067F0006E6100 /* PersonDetailViewController.h */,
+				FAA486ED200067F0006E6100 /* PersonDetailViewController.m */,
+				FAA486EE200067F0006E6100 /* PersonDetailViewController.xib */,
+			);
+			path = PersonDetail;
+			sourceTree = "<group>";
+		};
+		FAA486F120006820006E6100 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FAA486F220006836006E6100 /* API.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FAA486F32000683B006E6100 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				FAA486F420006853006E6100 /* Request.h */,
+				FAA486F520006853006E6100 /* Request.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		FAA486F720006858006E6100 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				FAA486F82000686A006E6100 /* Person.h */,
+				FAA486F92000686A006E6100 /* Person.m */,
+			);
+			path = Person;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +346,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA4870420007669006E6100 /* PersonDetailTableViewCell.xib in Resources */,
 				FAA486BC2000676F006E6100 /* LaunchScreen.storyboard in Resources */,
 				FAA486B92000676F006E6100 /* Assets.xcassets in Resources */,
+				FAA486FF20007255006E6100 /* PersonTableViewCell.xib in Resources */,
 				FAA486B72000676F006E6100 /* Main.storyboard in Resources */,
+				FAA486EB200067E0006E6100 /* HomeViewController.xib in Resources */,
+				FAA486F0200067F0006E6100 /* PersonDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,8 +378,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA486B42000676F006E6100 /* ViewController.m in Sources */,
+				FAA486EF200067F0006E6100 /* PersonDetailViewController.m in Sources */,
+				FAA486FE20007255006E6100 /* PersonTableViewCell.m in Sources */,
+				FAA4870320007669006E6100 /* PersonDetailTableViewCell.m in Sources */,
+				FAA486FA2000686A006E6100 /* Person.m in Sources */,
 				FAA486BF2000676F006E6100 /* main.m in Sources */,
 				FAA486B12000676F006E6100 /* AppDelegate.m in Sources */,
+				FAA486EA200067E0006E6100 /* HomeViewController.m in Sources */,
+				FAA486F620006853006E6100 /* Request.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

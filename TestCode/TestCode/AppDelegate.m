@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+#import "Request.h"
+#import "Person.h"
 
 @interface AppDelegate ()
+@property (nonatomic, copy) NSArray *topFiveUsers;
 
 @end
 
@@ -17,7 +21,40 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self topFiveUsersFromBackground];
+    [self setupHomeView];
     return YES;
+}
+
+- (void)setupHomeView{
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    HomeViewController *homeViewController = [[HomeViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:homeViewController];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+}
+
+- (void)topFiveUsersFromBackground{
+    NSMutableArray *results = [NSMutableArray array];
+    self.topFiveUsers = @[@"GrahamCampbell", @"fabpot", @"weierophinney", @"rkh", @"josh"];
+    
+    dispatch_group_t group = dispatch_group_create();
+    for (int i = 0; i < self.topFiveUsers.count; i++) {
+        dispatch_group_enter(group);
+        dispatch_group_async(group,dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^ {
+            [[Request shareInstance] informationFromName:self.topFiveUsers[i] completion:^(Person *person) {
+                dispatch_group_leave(group);
+                if (person) {
+                    [results addObject:person];
+                }
+            }];
+        });
+    }
+    
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^ {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"FinishLoadDataNotification" object:results];
+    });
 }
 
 
