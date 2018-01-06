@@ -26,7 +26,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQq-F4-P7t">
-                        <rect key="frame" x="83" y="12" width="42" height="21"/>
+                        <rect key="frame" x="77" y="0.0" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qf-rx-3ev">
+                        <rect key="frame" x="77" y="22" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -35,14 +41,18 @@
                 <constraints>
                     <constraint firstItem="mxn-J2-YhO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9GB-ck-WqN"/>
                     <constraint firstAttribute="bottom" secondItem="mxn-J2-YhO" secondAttribute="bottom" id="E3v-tQ-8Zb"/>
-                    <constraint firstItem="EQq-F4-P7t" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="F43-RG-iab"/>
+                    <constraint firstItem="2Qf-rx-3ev" firstAttribute="leading" secondItem="mxn-J2-YhO" secondAttribute="trailing" constant="8" id="Fir-hf-XY9"/>
                     <constraint firstItem="mxn-J2-YhO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Wkh-Hg-piQ"/>
-                    <constraint firstItem="EQq-F4-P7t" firstAttribute="leading" secondItem="mxn-J2-YhO" secondAttribute="trailing" constant="14" id="YM2-Vq-dIh"/>
+                    <constraint firstItem="EQq-F4-P7t" firstAttribute="leading" secondItem="mxn-J2-YhO" secondAttribute="trailing" constant="8" id="YM2-Vq-dIh"/>
+                    <constraint firstItem="EQq-F4-P7t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Zgp-vZ-9mP"/>
+                    <constraint firstItem="EQq-F4-P7t" firstAttribute="leading" secondItem="mxn-J2-YhO" secondAttribute="trailing" constant="8" id="bQt-Ub-rGI"/>
+                    <constraint firstAttribute="bottom" secondItem="2Qf-rx-3ev" secondAttribute="bottom" constant="0.5" id="tpY-S5-A4d"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
                 <outlet property="avatarImageView" destination="mxn-J2-YhO" id="IBi-4i-3Xq"/>
+                <outlet property="locationLabel" destination="2Qf-rx-3ev" id="PFj-RG-tMH"/>
                 <outlet property="nameLabel" destination="EQq-F4-P7t" id="QlI-jQ-oXW"/>
             </connections>
         </tableViewCell>

@@ -11,5 +11,6 @@
 
 @interface PersonDetailTableViewCell : PersonTableViewCell
 @property (nonatomic, weak) IBOutlet UIImageView *avatarImageView;
+@property (nonatomic, weak) IBOutlet UILabel *locationLabel;
 
 @end

@@ -24,6 +24,7 @@
 
 - (void)updateData:(Person *)person {
     [super updateData:person];
+    self.locationLabel.text = person.location;
     [self imageFromURL:person.avatar_url];
 }
 

@@ -44,10 +44,10 @@
         dispatch_group_enter(group);
         dispatch_group_async(group,dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^ {
             [[Request shareInstance] informationFromName:self.topFiveUsers[i] completion:^(Person *person) {
-                dispatch_group_leave(group);
                 if (person) {
                     [results addObject:person];
                 }
+                dispatch_group_leave(group);
             }];
         });
     }
